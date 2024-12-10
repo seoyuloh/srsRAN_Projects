@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/rlc/rlc_rx_tm_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/rlc/rlc_rx_tm_test[1]_tests.cmake")
-else()
-  add_test(rlc_rx_tm_test_NOT_BUILT rlc_rx_tm_test_NOT_BUILT)
-endif()

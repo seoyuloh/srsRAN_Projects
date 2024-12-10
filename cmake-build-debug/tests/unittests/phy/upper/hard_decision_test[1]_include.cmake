@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/upper/hard_decision_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/upper/hard_decision_test[1]_tests.cmake")
-else()
-  add_test(hard_decision_test_NOT_BUILT hard_decision_test_NOT_BUILT)
-endif()

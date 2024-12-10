@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/upper/rx_buffer_pool_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/upper/rx_buffer_pool_test[1]_tests.cmake")
-else()
-  add_test(rx_buffer_pool_test_NOT_BUILT rx_buffer_pool_test_NOT_BUILT)
-endif()

@@ -1,4 +1,0 @@
-# Directory labels
- e2ap
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/e2/e2_setup_procedure_test.cpp

@@ -1,4 +1,0 @@
-# Directory labels
- support
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/ofh/support/context_repository_helpers_test.cpp

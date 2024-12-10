@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/support/precoding_configuration_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/phy/support/precoding_configuration_test[1]_tests.cmake")
-else()
-  add_test(precoding_configuration_test_NOT_BUILT precoding_configuration_test_NOT_BUILT)
-endif()

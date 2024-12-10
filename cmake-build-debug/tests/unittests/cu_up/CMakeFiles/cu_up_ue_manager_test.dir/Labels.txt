@@ -1,4 +1,0 @@
-# Directory labels
- cu_up
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/cu_up/ue_manager_test.cpp

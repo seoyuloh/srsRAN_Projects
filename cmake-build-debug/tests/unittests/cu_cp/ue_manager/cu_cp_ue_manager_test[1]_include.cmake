@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/cu_cp/ue_manager/cu_cp_ue_manager_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/cu_cp/ue_manager/cu_cp_ue_manager_test[1]_tests.cmake")
-else()
-  add_test(cu_cp_ue_manager_test_NOT_BUILT cu_cp_ue_manager_test_NOT_BUILT)
-endif()

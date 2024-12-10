@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/slot_symbol_point_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/slot_symbol_point_test[1]_tests.cmake")
-else()
-  add_test(slot_symbol_point_test_NOT_BUILT slot_symbol_point_test_NOT_BUILT)
-endif()

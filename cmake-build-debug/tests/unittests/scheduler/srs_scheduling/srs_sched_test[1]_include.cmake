@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/scheduler/srs_scheduling/srs_sched_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/scheduler/srs_scheduling/srs_sched_test[1]_tests.cmake")
-else()
-  add_test(srs_sched_test_NOT_BUILT srs_sched_test_NOT_BUILT)
-endif()

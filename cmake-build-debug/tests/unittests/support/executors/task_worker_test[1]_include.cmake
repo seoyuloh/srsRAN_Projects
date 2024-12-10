@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/support/executors/task_worker_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/support/executors/task_worker_test[1]_tests.cmake")
-else()
-  add_test(task_worker_test_NOT_BUILT task_worker_test_NOT_BUILT)
-endif()

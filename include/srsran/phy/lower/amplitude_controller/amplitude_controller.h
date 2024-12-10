@@ -48,10 +48,6 @@ struct amplitude_controller_metrics {
   long double clipping_probability;
   /// Indicates whether clipping is enabled in the amplitude controller.
   bool clipping_enabled;
-
-  float input_power = 0.0f;      // Average input signal power
-  float output_power = 0.0f;     // Average output signal power
-  int clipping_count = 0;        // Number of clipped samples
 };
 
 /// \brief Describes an amplitude controller interface.

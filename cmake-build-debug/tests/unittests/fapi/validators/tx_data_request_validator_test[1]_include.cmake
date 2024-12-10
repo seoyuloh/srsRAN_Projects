@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/tx_data_request_validator_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/tx_data_request_validator_test[1]_tests.cmake")
-else()
-  add_test(tx_data_request_validator_test_NOT_BUILT tx_data_request_validator_test_NOT_BUILT)
-endif()

@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/builders/ul_tti_request_builder_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/builders/ul_tti_request_builder_test[1]_tests.cmake")
-else()
-  add_test(ul_tti_request_builder_test_NOT_BUILT ul_tti_request_builder_test_NOT_BUILT)
-endif()

@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/receiver/ofh_uplane_rx_symbol_data_flow_notifier_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/receiver/ofh_uplane_rx_symbol_data_flow_notifier_test[1]_tests.cmake")
-else()
-  add_test(ofh_uplane_rx_symbol_data_flow_notifier_test_NOT_BUILT ofh_uplane_rx_symbol_data_flow_notifier_test_NOT_BUILT)
-endif()

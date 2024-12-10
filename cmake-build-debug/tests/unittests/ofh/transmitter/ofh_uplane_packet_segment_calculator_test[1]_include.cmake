@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/transmitter/ofh_uplane_packet_segment_calculator_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ofh/transmitter/ofh_uplane_packet_segment_calculator_test[1]_tests.cmake")
-else()
-  add_test(ofh_uplane_packet_segment_calculator_test_NOT_BUILT ofh_uplane_packet_segment_calculator_test_NOT_BUILT)
-endif()

@@ -1,8 +1,0 @@
-# Directory labels
- ofh
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/apps/examples/ofh/ru_emulator_cli11_schema.cpp
-/home/seoyul/srsRAN_Projects/apps/examples/ofh/ru_emulator.cpp
-/home/seoyul/srsRAN_Projects/apps/examples/ofh/ru_emulator_rx_window_checker.cpp
-/home/seoyul/srsRAN_Projects/apps/examples/ofh/ru_emulator_socket_transceiver.cpp
-/home/seoyul/srsRAN_Projects/apps/examples/ofh/ru_emulator_timing_notifier.cpp

@@ -1,4 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/phy/support/resource_grid_pool_test.cpp

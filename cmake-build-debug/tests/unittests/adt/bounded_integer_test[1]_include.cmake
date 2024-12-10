@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/adt/bounded_integer_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/adt/bounded_integer_test[1]_tests.cmake")
-else()
-  add_test(bounded_integer_test_NOT_BUILT bounded_integer_test_NOT_BUILT)
-endif()

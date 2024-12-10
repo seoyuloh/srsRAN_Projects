@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/crc_indication_validator_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/crc_indication_validator_test[1]_tests.cmake")
-else()
-  add_test(crc_indication_validator_test_NOT_BUILT crc_indication_validator_test_NOT_BUILT)
-endif()

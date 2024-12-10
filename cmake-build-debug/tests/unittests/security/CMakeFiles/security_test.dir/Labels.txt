@@ -1,4 +1,0 @@
-# Directory labels
- security
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/security/security_test.cpp

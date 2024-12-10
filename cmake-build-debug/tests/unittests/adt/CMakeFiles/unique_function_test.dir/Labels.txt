@@ -1,4 +1,0 @@
-# Directory labels
- adt
-# Source files and their labels
-/home/seoyul/srsRAN_Projects/tests/unittests/adt/unique_function_test.cpp

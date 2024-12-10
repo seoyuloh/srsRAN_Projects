@@ -1,5 +1,0 @@
-if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi_adaptor/phy/messages/fapi_phy_pdsch_adaptor_test[1]_tests.cmake")
-  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi_adaptor/phy/messages/fapi_phy_pdsch_adaptor_test[1]_tests.cmake")
-else()
-  add_test(fapi_phy_pdsch_adaptor_test_NOT_BUILT fapi_phy_pdsch_adaptor_test_NOT_BUILT)
-endif()
