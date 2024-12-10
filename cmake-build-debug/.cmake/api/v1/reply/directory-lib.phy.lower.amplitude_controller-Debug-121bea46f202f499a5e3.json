@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/phy/lower/amplitude_controller",
+		"source" : "lib/phy/lower/amplitude_controller"
+	}
+}

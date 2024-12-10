@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/scheduler/common_scheduling",
+		"source" : "tests/unittests/scheduler/common_scheduling"
+	}
+}

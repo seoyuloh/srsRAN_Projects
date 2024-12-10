@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ran/csi_report_on_pucch_validator_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/ran/csi_report_on_pucch_validator_test[1]_tests.cmake")
+else()
+  add_test(csi_report_on_pucch_validator_test_NOT_BUILT csi_report_on_pucch_validator_test_NOT_BUILT)
+endif()

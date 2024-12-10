@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/apps/units/flexible_du/du_high/metrics",
+		"source" : "tests/unittests/apps/units/flexible_du/du_high/metrics"
+	}
+}

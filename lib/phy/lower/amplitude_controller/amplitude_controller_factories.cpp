@@ -23,6 +23,7 @@
 #include "srsran/phy/lower/amplitude_controller/amplitude_controller_factories.h"
 #include "amplitude_controller_clipping_impl.h"
 #include "amplitude_controller_scaling_impl.h"
+#include "amplitude_controller_custom_impl.h"
 
 using namespace srsran;
 
@@ -66,6 +67,22 @@ private:
   float gain_dB;
 };
 
+class amplitude_controller_custom_factory : public amplitude_controller_factory
+{
+public:
+  std::unique_ptr<amplitude_controller> create() override
+  {
+    return std::make_unique<amplitude_controller_custom_impl>(custom_param);
+  }
+
+  explicit amplitude_controller_custom_factory(float custom_param_)
+      : custom_param(custom_param_) {}
+
+private:
+  float custom_param; // Parameter specific to your custom controller
+};
+
+
 } // namespace
 
 std::shared_ptr<amplitude_controller_factory>
@@ -78,3 +95,10 @@ std::shared_ptr<amplitude_controller_factory> srsran::create_amplitude_controlle
 {
   return std::make_shared<amplitude_controller_scaling_factory>(gain_dB_);
 }
+
+std::shared_ptr<amplitude_controller_factory>
+srsran::create_amplitude_controller_custom_factory(float custom_param)
+{
+  return std::make_shared<amplitude_controller_custom_factory>(custom_param);
+}
+

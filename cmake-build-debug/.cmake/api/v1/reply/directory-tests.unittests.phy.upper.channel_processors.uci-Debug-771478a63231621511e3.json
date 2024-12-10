@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/phy/upper/channel_processors/uci",
+		"source" : "tests/unittests/phy/upper/channel_processors/uci"
+	}
+}

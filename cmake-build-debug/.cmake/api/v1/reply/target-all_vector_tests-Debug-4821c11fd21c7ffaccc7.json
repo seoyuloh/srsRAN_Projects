@@ -1,0 +1,124 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_test_vector"
+		],
+		"files" : 
+		[
+			"tests/unittests/CMakeLists.txt",
+			"tests/unittests/ran/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 62,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 98,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 102,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 11
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "tbs_calculator_test::@4d274229e35db9a9c4c2"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "pdcch_candidates_common::@4d274229e35db9a9c4c2"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "pdcch_candidates_ue::@4d274229e35db9a9c4c2"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "pusch_tpmi_select_test::@4d274229e35db9a9c4c2"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "ulsch_info_test::@4d274229e35db9a9c4c2"
+		}
+	],
+	"id" : "all_vector_tests::@e32356b651adc7607675",
+	"name" : "all_vector_tests",
+	"paths" : 
+	{
+		"build" : "tests/unittests",
+		"source" : "tests/unittests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/scheduler/ue_scheduling",
+		"source" : "tests/unittests/scheduler/ue_scheduling"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/phy/upper/equalization",
+		"source" : "tests/unittests/phy/upper/equalization"
+	}
+}

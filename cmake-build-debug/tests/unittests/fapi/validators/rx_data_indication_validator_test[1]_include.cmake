@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/rx_data_indication_validator_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi/validators/rx_data_indication_validator_test[1]_tests.cmake")
+else()
+  add_test(rx_data_indication_validator_test_NOT_BUILT rx_data_indication_validator_test_NOT_BUILT)
+endif()

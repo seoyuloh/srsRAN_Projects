@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/cu_cp/cu_up_processor",
+		"source" : "tests/unittests/cu_cp/cu_up_processor"
+	}
+}

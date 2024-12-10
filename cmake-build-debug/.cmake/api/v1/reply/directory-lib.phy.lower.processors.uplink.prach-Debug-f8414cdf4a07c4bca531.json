@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/phy/lower/processors/uplink/prach",
+		"source" : "lib/phy/lower/processors/uplink/prach"
+	}
+}

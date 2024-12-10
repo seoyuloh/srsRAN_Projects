@@ -1,0 +1,323 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/rrc/libsrsran_rrc.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/rrc/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 235,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 411,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 412,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 413,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Werror -Wno-error=maybe-uninitialized -Wno-error=stringop-overflow -Wnon-virtual-dtor -Wsuggest-override -Wshadow -march=native -mtune=generic -march=native -mtune=generic -g -ggdb -O0 -DDEBUG_MODE -DBUILD_TYPE_DEBUG -std=gnu++17 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ASSERTS_ENABLED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "PARANOID_ASSERTS_ENABLED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/seoyul/srsRAN_Projects/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/seoyul/srsRAN_Projects/external/fmt/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/seoyul/srsRAN_Projects/external"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/seoyul/srsRAN_Projects/lib/rrc"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@26af8659e4d2d893069d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "asn1_utils::@4f89d3503c6abe17ff23"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rrc_nr_asn1::@658dd7ac4b7b7363b462"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_up_resource_manager::@e3b85782dc3287002a50"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_ue_security_manager::@6c2be57e54766a2d1790"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_instrumentation::@f68ba44ecca4186a792c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_pdcp::@24917ab73f01c8ed3874"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_security::@6cbddce851abd76a27a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srslog::@49d9204f297d2d07fad5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_support::@a2bcb599a96d79018167"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_network::@d8222a95227f4224f4a8"
+		}
+	],
+	"id" : "srsran_rrc::@7a06e1fe87461b765538",
+	"name" : "srsran_rrc",
+	"nameOnDisk" : "libsrsran_rrc.a",
+	"paths" : 
+	{
+		"build" : "lib/rrc",
+		"source" : "lib/rrc"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/rrc_du_factory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/rrc_du_impl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/meas_types_validators.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_asn1_helpers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_asn1_converters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_measurement_types_asn1_converters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_ue_impl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_ue_context.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_ue_message_handlers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_ue_message_senders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/rrc_ue_helpers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/procedures/rrc_setup_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/procedures/rrc_reconfiguration_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/procedures/rrc_ue_capability_transfer_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/rrc/ue/procedures/rrc_reestablishment_procedure.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

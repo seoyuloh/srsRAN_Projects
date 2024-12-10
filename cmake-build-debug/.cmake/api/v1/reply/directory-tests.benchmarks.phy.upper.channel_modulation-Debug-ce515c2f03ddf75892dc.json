@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/benchmarks/phy/upper/channel_modulation",
+		"source" : "tests/benchmarks/phy/upper/channel_modulation"
+	}
+}

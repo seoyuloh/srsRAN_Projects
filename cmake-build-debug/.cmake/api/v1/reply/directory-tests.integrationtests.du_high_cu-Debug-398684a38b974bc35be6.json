@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/integrationtests/du_high_cu",
+		"source" : "tests/integrationtests/du_high_cu"
+	}
+}

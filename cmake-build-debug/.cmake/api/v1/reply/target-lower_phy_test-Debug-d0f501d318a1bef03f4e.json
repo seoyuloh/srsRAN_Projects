@@ -1,0 +1,460 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tests/unittests/phy/lower/lower_phy_test"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"tests/unittests/phy/lower/CMakeLists.txt",
+			"CMakeLists.txt",
+			"lib/phy/lower/CMakeLists.txt",
+			"lib/phy/generic_functions/CMakeLists.txt",
+			"lib/phy/lower/processors/downlink/pdxch/CMakeLists.txt",
+			"lib/instrumentation/CMakeLists.txt",
+			"lib/support/CMakeLists.txt",
+			"lib/phy/lower/amplitude_controller/CMakeLists.txt",
+			"lib/phy/lower/modulation/CMakeLists.txt",
+			"lib/srslog/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 329,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 29,
+				"parent" : 5
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 56,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 53,
+				"parent" : 7
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 24,
+				"parent" : 10
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 26,
+				"parent" : 12
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 48,
+				"parent" : 14
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 25,
+				"parent" : 16
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 26,
+				"parent" : 18
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 37,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 232,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 235,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 411,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 412,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 413,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Werror -Wno-error=maybe-uninitialized -Wno-error=stringop-overflow -Wnon-virtual-dtor -Wsuggest-override -Wshadow -march=native -mtune=generic -march=native -mtune=generic -g -ggdb -O0 -DDEBUG_MODE -DBUILD_TYPE_DEBUG -std=gnu++17 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 22,
+					"define" : "ASSERTS_ENABLED"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PARANOID_ASSERTS_ENABLED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 24,
+					"path" : "/home/seoyul/srsRAN_Projects/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/home/seoyul/srsRAN_Projects/external/fmt/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/home/seoyul/srsRAN_Projects/external"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "fmt::@26af8659e4d2d893069d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_instrumentation::@f68ba44ecca4186a792c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_generic_funcs_dft::@1e084e95637af5f069c7"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_generic_funcs::@1e084e95637af5f069c7"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy::@c1d6f27afb38a0c144c5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_modulation::@ab454fba6027f82eb092"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_adaptors::@71ce0a364e902d1eaea9"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_downlink_processor::@92e7f61664ff78e3c52a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_pdxch_processor::@ab18608ea31f9d681f98"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_uplink_processor::@e450ede8baff587ea508"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_prach_processor::@88f01a6feebc0ebe3012"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_puxch_processor::@a11d2add40c1f1e4fd6d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_lower_phy_amplitude_controller::@e9ed4987a124f534dad8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_ran::@08730974a1eebe8b8b40"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srslog::@49d9204f297d2d07fad5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsvec::@c9dd5d07f90263465608"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_support::@a2bcb599a96d79018167"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "srsran_network::@d8222a95227f4224f4a8"
+		}
+	],
+	"id" : "lower_phy_test::@41524587fecdbf34fa29",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Werror -Wno-error=maybe-uninitialized -Wno-error=stringop-overflow -Wnon-virtual-dtor -Wsuggest-override -Wshadow -march=native -mtune=generic -march=native -mtune=generic -g -ggdb -O0 -DDEBUG_MODE -DBUILD_TYPE_DEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib/phy/lower/libsrsran_lower_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib/srslog/libsrslog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lgtest",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lgtest_main",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/generic_functions/libsrsran_generic_funcs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/phy/generic_functions/libsrsran_generic_funcs_dft.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libfftw3f.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/adaptors/libsrsran_lower_phy_adaptors.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/amplitude_controller/libsrsran_lower_phy_amplitude_controller.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/downlink/libsrsran_lower_phy_downlink_processor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/downlink/pdxch/libsrsran_lower_phy_pdxch_processor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/uplink/libsrsran_lower_phy_uplink_processor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/uplink/prach/libsrsran_lower_phy_prach_processor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "lib/instrumentation/libsrsran_instrumentation.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "lib/support/libsrsran_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "lib/support/network/libsrsran_network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/processors/uplink/puxch/libsrsran_lower_phy_puxch_processor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/phy/lower/modulation/libsrsran_lower_phy_modulation.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/srsvec/libsrsvec.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "lib/ran/libsrsran_ran.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib/srslog/libsrslog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "external/fmt/libfmt.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "lower_phy_test",
+	"nameOnDisk" : "lower_phy_test",
+	"paths" : 
+	{
+		"build" : "tests/unittests/phy/lower",
+		"source" : "tests/unittests/phy/lower"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/unittests/phy/lower/lower_phy_test.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

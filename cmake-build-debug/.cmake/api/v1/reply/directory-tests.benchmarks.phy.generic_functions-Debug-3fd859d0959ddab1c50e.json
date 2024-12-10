@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/benchmarks/phy/generic_functions",
+		"source" : "tests/benchmarks/phy/generic_functions"
+	}
+}

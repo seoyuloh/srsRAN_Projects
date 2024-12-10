@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/phy/upper/sequence_generators",
+		"source" : "lib/phy/upper/sequence_generators"
+	}
+}

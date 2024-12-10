@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/du/du_high/du_manager/procedures",
+		"source" : "lib/du/du_high/du_manager/procedures"
+	}
+}

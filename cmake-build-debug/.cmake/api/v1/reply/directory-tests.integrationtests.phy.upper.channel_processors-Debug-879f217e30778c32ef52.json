@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/integrationtests/phy/upper/channel_processors",
+		"source" : "tests/integrationtests/phy/upper/channel_processors"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/benchmarks/phy/upper/signal_processors",
+		"source" : "tests/benchmarks/phy/upper/signal_processors"
+	}
+}

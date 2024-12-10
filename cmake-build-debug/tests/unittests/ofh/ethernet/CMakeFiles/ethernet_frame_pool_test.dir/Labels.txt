@@ -1,0 +1,4 @@
+# Directory labels
+ ethernet
+# Source files and their labels
+/home/seoyul/srsRAN_Projects/tests/unittests/ofh/ethernet/ethernet_frame_pool_test.cpp

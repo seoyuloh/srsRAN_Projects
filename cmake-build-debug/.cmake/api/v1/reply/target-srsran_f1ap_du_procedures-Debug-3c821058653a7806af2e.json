@@ -1,0 +1,233 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/f1ap/du/procedures/libsrsran_f1ap_du_procedures.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"lib/f1ap/du/procedures/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 235,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 411,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 412,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 413,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Werror -Wno-error=maybe-uninitialized -Wno-error=stringop-overflow -Wnon-virtual-dtor -Wsuggest-override -Wshadow -march=native -mtune=generic -march=native -mtune=generic -g -ggdb -O0 -DDEBUG_MODE -DBUILD_TYPE_DEBUG -std=gnu++17 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ASSERTS_ENABLED"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "PARANOID_ASSERTS_ENABLED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/seoyul/srsRAN_Projects/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/seoyul/srsRAN_Projects/external/fmt/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/seoyul/srsRAN_Projects/external"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@26af8659e4d2d893069d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "asn1_utils::@4f89d3503c6abe17ff23"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "f1ap_asn1::@4f89d3503c6abe17ff23"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_f1ap_common::@46642a4e325c45d874c5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srslog::@49d9204f297d2d07fad5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_support::@a2bcb599a96d79018167"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "srsran_network::@d8222a95227f4224f4a8"
+		}
+	],
+	"id" : "srsran_f1ap_du_procedures::@703e2dd37776d43a7226",
+	"name" : "srsran_f1ap_du_procedures",
+	"nameOnDisk" : "libsrsran_f1ap_du_procedures.a",
+	"paths" : 
+	{
+		"build" : "lib/f1ap/du/procedures",
+		"source" : "lib/f1ap/du/procedures"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/gnb_cu_configuration_update_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_setup_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_removal_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_ue_context_setup_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_ue_context_modification_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_ue_context_release_procedure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/f1ap/du/procedures/f1ap_du_reset_procedure.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

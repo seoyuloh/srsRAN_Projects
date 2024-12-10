@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/nru/nru_packing_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/nru/nru_packing_test[1]_tests.cmake")
+else()
+  add_test(nru_packing_test_NOT_BUILT nru_packing_test_NOT_BUILT)
+endif()

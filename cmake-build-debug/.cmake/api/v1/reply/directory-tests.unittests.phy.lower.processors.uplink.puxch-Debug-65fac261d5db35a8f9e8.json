@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tests/unittests/phy/lower/processors/uplink/puxch",
+		"source" : "tests/unittests/phy/lower/processors/uplink/puxch"
+	}
+}

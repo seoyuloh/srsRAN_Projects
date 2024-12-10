@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/f1u/f1u_cu_up_split_connector_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/f1u/f1u_cu_up_split_connector_test[1]_tests.cmake")
+else()
+  add_test(f1u_cu_up_split_connector_test_NOT_BUILT f1u_cu_up_split_connector_test_NOT_BUILT)
+endif()

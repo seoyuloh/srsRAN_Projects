@@ -1,0 +1,4 @@
+# Directory labels
+ du_manager
+# Source files and their labels
+/home/seoyul/srsRAN_Projects/tests/unittests/du_manager/serving_cell_config_converter_test.cpp

@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi_adaptor/mac/mac_to_fapi_translator_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/fapi_adaptor/mac/mac_to_fapi_translator_test[1]_tests.cmake")
+else()
+  add_test(mac_to_fapi_translator_test_NOT_BUILT mac_to_fapi_translator_test_NOT_BUILT)
+endif()

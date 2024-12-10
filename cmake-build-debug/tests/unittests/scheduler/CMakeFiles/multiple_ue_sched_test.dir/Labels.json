@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/seoyul/srsRAN_Projects/tests/unittests/scheduler/multiple_ue_sched_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sched"
+		],
+		"name" : "multiple_ue_sched_test"
+	}
+}

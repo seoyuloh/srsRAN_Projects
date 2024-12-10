@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "apps/units/flexible_o_du/split_6",
+		"source" : "apps/units/flexible_o_du/split_6"
+	}
+}

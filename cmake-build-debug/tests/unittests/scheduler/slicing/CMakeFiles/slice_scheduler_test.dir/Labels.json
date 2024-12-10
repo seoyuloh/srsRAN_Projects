@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/seoyul/srsRAN_Projects/tests/unittests/scheduler/slicing/slice_scheduler_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sched"
+		],
+		"name" : "slice_scheduler_test"
+	}
+}

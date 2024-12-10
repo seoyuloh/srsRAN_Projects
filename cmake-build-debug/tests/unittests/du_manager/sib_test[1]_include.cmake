@@ -1,0 +1,5 @@
+if(EXISTS "/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/du_manager/sib_test[1]_tests.cmake")
+  include("/home/seoyul/srsRAN_Projects/cmake-build-debug/tests/unittests/du_manager/sib_test[1]_tests.cmake")
+else()
+  add_test(sib_test_NOT_BUILT sib_test_NOT_BUILT)
+endif()
