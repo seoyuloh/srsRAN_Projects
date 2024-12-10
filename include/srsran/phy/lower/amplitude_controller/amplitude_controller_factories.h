@@ -39,6 +39,11 @@ struct amplitude_controller_clipping_config {
   float full_scale_lin;
   /// Maximum signal amplitude in dB relative to full scale allowed at the output of the amplitude controller.
   float ceiling_dBFS;
+
+  // New fields
+  bool use_scaling = false;            // Flag for scaling controller
+  bool use_custom_controller = false; // Flag for custom controller
+  float custom_param = 0.0f;           // Parameter for custom controller
 };
 
 /// Describes an amplitude controller factory.
@@ -59,5 +64,8 @@ create_amplitude_controller_clipping_factory(const amplitude_controller_clipping
 
 /// Creates a scaling amplitude controller factory.
 std::shared_ptr<amplitude_controller_factory> create_amplitude_controller_scaling_factory(float gain_dB_);
+
+/// Creates a custom amplitude controller factory.
+std::shared_ptr<amplitude_controller_factory> create_amplitude_controller_custom_factory(float custom_param); // New function
 
 } // namespace srsran

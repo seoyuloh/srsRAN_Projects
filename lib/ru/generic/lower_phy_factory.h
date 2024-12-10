@@ -94,12 +94,21 @@ inline std::shared_ptr<lower_phy_factory> create_lower_phy_factory(lower_phy_con
   report_fatal_error_if_not(puxch_proc_factory, "Failed to create PUxCH processor factory.");
 
   // Create amplitude control factory.
+  // Create amplitude control factory.
+  // Create amplitude control factory.
   std::shared_ptr<amplitude_controller_factory> amplitude_control_factory;
   if (config.amplitude_config.enable_clipping) {
     amplitude_control_factory = create_amplitude_controller_clipping_factory(config.amplitude_config);
-  } else {
+  } else if (config.amplitude_config.use_scaling) {
     amplitude_control_factory = create_amplitude_controller_scaling_factory(config.amplitude_config.input_gain_dB);
+  } else if (config.amplitude_config.use_custom_controller) {
+    amplitude_control_factory = create_amplitude_controller_custom_factory(config.amplitude_config.custom_param);
+  } else {
+    throw std::runtime_error("Invalid amplitude controller configuration");
   }
+
+  //todo: lower_phy_processor class maintains a thread? add a new thread here to monitor any user standardi/o
+
   report_fatal_error_if_not(amplitude_control_factory, "Failed to create amplitude controller factory.");
 
   // Create Downlink processor factory.
