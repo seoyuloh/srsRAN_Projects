@@ -96,6 +96,8 @@ std::shared_ptr<amplitude_controller_factory> srsran::create_amplitude_controlle
   return std::make_shared<amplitude_controller_scaling_factory>(gain_dB_);
 }
 
+
+// added amplitude_controller_custom_factory
 std::shared_ptr<amplitude_controller_factory>
 srsran::create_amplitude_controller_custom_factory(float custom_param)
 {
