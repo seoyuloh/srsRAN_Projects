@@ -163,6 +163,11 @@ public:
     std::unique_ptr<lower_phy_uplink_processor> ul_proc = uplink_proc_factory->create(ul_proc_config);
     srsran_assert(dl_proc, "Failed to create the UL processor.");
 
+    std::unique_ptr<downlink_tuner> dl_tuner;
+    if (config.dl_tuner_cfg) {
+      dl_tuner = create_downlink_tuner(*config.dl_tuner_cfg);
+    }
+
     // Prepare processor baseband adaptor configuration.
     lower_phy_baseband_processor::configuration proc_bb_adaptor_config;
     proc_bb_adaptor_config.srate                  = config.srate;
@@ -183,6 +188,7 @@ public:
     proc_bb_adaptor_config.tx_buffer_size         = tx_buffer_size;
     proc_bb_adaptor_config.nof_tx_buffers         = std::max(4U, rx_to_tx_max_delay / tx_buffer_size);
     proc_bb_adaptor_config.system_time_throttling = config.system_time_throttling;
+    proc_bb_adaptor_config.dl_tuner               = dl_tuner.get();
 
     // Create lower PHY controller from the processor baseband adaptor.
     std::unique_ptr<lower_phy_controller> controller =
@@ -193,6 +199,7 @@ public:
     lower_phy_impl::configuration lower_phy_config;
     lower_phy_config.downlink_proc      = std::move(dl_proc);
     lower_phy_config.uplink_proc        = std::move(ul_proc);
+    lower_phy_config.dl_tuner           = std::move(dl_tuner);
     lower_phy_config.controller         = std::move(controller);
     lower_phy_config.rx_symbol_notifier = config.rx_symbol_notifier;
     lower_phy_config.timing_notifier    = config.timing_notifier;

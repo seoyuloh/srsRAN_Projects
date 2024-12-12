@@ -26,7 +26,7 @@
 
 using namespace srsran;
 
-lower_phy_baseband_processor::lower_phy_baseband_processor(const lower_phy_baseband_processor::configuration& config) :
+lower_phy_baseband_processor::lower_phy_baseband_processor(const configuration& config) :
   srate(config.srate),
   tx_buffer_size(config.tx_buffer_size),
   rx_buffer_size(config.rx_buffer_size),
@@ -43,10 +43,10 @@ lower_phy_baseband_processor::lower_phy_baseband_processor(const lower_phy_baseb
   rx_buffers(config.nof_rx_buffers),
   tx_buffers(config.nof_tx_buffers),
   tx_time_offset(config.tx_time_offset),
-  rx_to_tx_max_delay(config.rx_to_tx_max_delay)
+  rx_to_tx_max_delay(config.rx_to_tx_max_delay),
+  dl_tuner(config.dl_tuner)
 {
   static constexpr interval<float> system_time_throttling_range(0, 1);
-
   srsran_assert(tx_buffer_size, "Invalid buffer size.");
   srsran_assert(rx_buffer_size, "Invalid buffer size.");
   srsran_assert(config.rx_task_executor, "Invalid receive task executor.");
@@ -143,7 +143,9 @@ void lower_phy_baseband_processor::dl_process(baseband_gateway_timestamp timesta
 
   // Set transmission timestamp.
   baseband_md.ts = timestamp + tx_time_offset;
-
+  if (dl_tuner) {
+    dl_tuner->tune(dl_buffer->get_writer());
+  }
   // Enqueue transmission.
   report_fatal_error_if_not(tx_executor.execute([this, tx_buffer = std::move(dl_buffer), baseband_md]() mutable {
     trace_point tx_tp = ru_tracer.now();

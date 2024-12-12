@@ -103,6 +103,9 @@ static lower_phy_configuration generate_low_phy_config(const srs_du::du_cell_con
   // Set the full scale amplitude reference to 1.
   out_cfg.amplitude_config.full_scale_lin = 1.0F;
 
+  // Downlink tuner
+  out_cfg.dl_tuner_cfg = ru_cfg.downlink_tuner_cfg;
+
   lower_phy_sector_description sector_config;
   sector_config.bandwidth_rb = band_helper::get_n_rbs_from_bw(
       MHz_to_bs_channel_bandwidth(config.dl_carrier.carrier_bw_mhz), config.scs_common, frequency_range::FR1);

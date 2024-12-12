@@ -23,6 +23,8 @@
 #pragma once
 
 #include "apps/services/worker_manager/os_sched_affinity_manager.h"
+#include "lib/phy/lower/processors/downlink/downlink_tuner_impl.h"
+
 #include <string>
 
 namespace srsran {
@@ -179,6 +181,8 @@ struct ru_sdr_unit_config {
   ru_sdr_unit_expert_config expert_cfg;
   /// Amplitude control configuration.
   amplitude_control_unit_config amplitude_cfg;
+  /// Tuner config
+  downlink_tuner_config downlink_tuner_cfg;
   /// Expert execution parameters for the SDR Radio Unit.
   ru_sdr_unit_expert_execution_config expert_execution_cfg;
 };

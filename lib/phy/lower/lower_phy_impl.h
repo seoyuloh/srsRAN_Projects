@@ -55,6 +55,8 @@ public:
     std::unique_ptr<lower_phy_downlink_processor> downlink_proc;
     /// Uplink processor.
     std::unique_ptr<lower_phy_uplink_processor> uplink_proc;
+    /// dl tuner
+    std::unique_ptr<downlink_tuner> dl_tuner;
     /// Baseband controller.
     std::unique_ptr<lower_phy_controller> controller;
     /// Symbol handler to notify the reception of symbols.

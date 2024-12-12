@@ -29,6 +29,15 @@
 
 using namespace srsran;
 
+static void configure_cli11_downlink_tuner_args(CLI::App& app, downlink_tuner_config &cfg)
+{
+  add_option(app,
+    "--downlink_tuner_name",
+    cfg.downlink_tuner_name,
+    "Name for downlink tuner")
+  ->capture_default_str();
+}
+
 static void configure_cli11_amplitude_control_args(CLI::App& app, amplitude_control_unit_config& amplitude_params)
 {
   add_option(app,
@@ -130,6 +139,10 @@ static void configure_cli11_ru_sdr_args(CLI::App& app, ru_sdr_unit_config& confi
   // Amplitude control configuration.
   CLI::App* amplitude_control_subcmd = add_subcommand(app, "amplitude_control", "Amplitude control parameters");
   configure_cli11_amplitude_control_args(*amplitude_control_subcmd, config.amplitude_cfg);
+
+  // Downlink tuner
+  auto downlink_tuner_subcmd = add_subcommand(app, "downlink_tuner", "Downlink tuner params");
+  configure_cli11_downlink_tuner_args(*downlink_tuner_subcmd,config.downlink_tuner_cfg);
 
   // Expert configuration.
   CLI::App* expert_subcmd = add_subcommand(app, "expert_cfg", "Generic Radio Unit expert configuration");
