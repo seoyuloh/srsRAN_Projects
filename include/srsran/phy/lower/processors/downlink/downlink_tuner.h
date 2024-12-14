@@ -19,6 +19,7 @@ class downlink_tuner_config
 {
 public:
   std::string downlink_tuner_name;
+  std::string domain_socket_name;
 };
 
 std::unique_ptr<downlink_tuner> create_downlink_tuner(const downlink_tuner_config& config);

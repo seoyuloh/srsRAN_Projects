@@ -32,9 +32,14 @@ using namespace srsran;
 static void configure_cli11_downlink_tuner_args(CLI::App& app, downlink_tuner_config &cfg)
 {
   add_option(app,
-    "--downlink_tuner_name",
+    "--name",
     cfg.downlink_tuner_name,
     "Name for downlink tuner")
+  ->capture_default_str();
+  add_option(app,
+    "--domain_socket",
+    cfg.domain_socket_name,
+    "Domain socket to communicate tuning")
   ->capture_default_str();
 }
 
