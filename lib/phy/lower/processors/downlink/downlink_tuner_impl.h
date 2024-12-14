@@ -21,7 +21,7 @@ public:
 private:
   std::unique_ptr<std::thread> tuner_thread;
   std::atomic<double>          attenuation = 1.0;
-  std::atomic_bool monitoring  = false;
+  std::atomic_bool             monitoring  = false;
   srslog::basic_logger& logger;
 };
 

@@ -32,7 +32,7 @@ downlink_tuner_impl::downlink_tuner_impl() : logger(srslog::fetch_basic_logger("
         std::cin.clear();
       }
       std::this_thread::sleep_for(std::chrono::seconds(1));
-    } while (new_gain>0);
+    } while (new_gain > 0);
   });
 }
 
