@@ -20,13 +20,12 @@ void downlink_tuner_impl::tune(baseband_gateway_buffer_writer& buffer)
 }
 
 downlink_tuner_impl::downlink_tuner_impl(const downlink_tuner_config& config) :
-logger(srslog::fetch_basic_logger("Downlink tuner")),
-sock(config.domain_socket_name)
+  logger(srslog::fetch_basic_logger("Downlink tuner")), sock(config.domain_socket_name)
 {
   tuner_thread = std::make_unique<std::thread>([this]() {
     float new_gain;
     do {
-      sock>>new_gain;
+      sock >> new_gain;
       if (sock) {
         this->attenuation.store(new_gain, std::memory_order_relaxed);
         logger.info("Attenuation changed to {}", new_gain);
@@ -46,7 +45,7 @@ std::unique_ptr<downlink_tuner_impl> downlink_tuner_impl::create(const downlink_
 
 std::unique_ptr<downlink_tuner> create_downlink_tuner(const downlink_tuner_config& config)
 {
-  if (config.downlink_tuner_name=="tuner")
+  if (config.downlink_tuner_name == "tuner")
     return downlink_tuner_impl::create(config);
   return nullptr;
 }
