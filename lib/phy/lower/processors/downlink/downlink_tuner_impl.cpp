@@ -3,6 +3,8 @@
 //
 
 #include "downlink_tuner_impl.h"
+
+#include "srsran/srslog/srslog.h"
 #include "srsran/srsvec/sc_prod.h"
 
 #include <future>
@@ -17,14 +19,20 @@ void downlink_tuner_impl::tune(baseband_gateway_buffer_writer& buffer)
   }
 }
 
- downlink_tuner_impl::downlink_tuner_impl()
+downlink_tuner_impl::downlink_tuner_impl() : logger(srslog::fetch_basic_logger("Downlink tuner"))
 {
-  tuner_thread=std::make_unique<std::thread>([this]() {
+  tuner_thread = std::make_unique<std::thread>([this]() {
     float new_gain;
     do {
       std::cin>>new_gain;
-      this->attenuation.store(new_gain, std::memory_order_relaxed);
-    }while (new_gain>0);
+      if (std::cin) {
+        this->attenuation.store(new_gain, std::memory_order_relaxed);
+        logger.info("Attenuation changed to {}", new_gain);
+      } else {
+        std::cin.clear();
+      }
+      std::this_thread::sleep_for(std::chrono::seconds(1));
+    } while (new_gain>0);
   });
 }
 

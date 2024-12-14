@@ -91,6 +91,8 @@ public:
   processor_notifier_adaptor notification_adaptor;
   /// Baseband adaptor. It implements the lower physical layer controller.
   std::unique_ptr<lower_phy_controller> controller;
+  // Downlink tuner
+  std::unique_ptr<downlink_tuner> dl_tuner;
 };
 
 } // namespace srsran

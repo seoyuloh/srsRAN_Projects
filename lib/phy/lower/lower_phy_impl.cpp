@@ -31,7 +31,8 @@ lower_phy_impl::lower_phy_impl(configuration& config) :
   handler_adaptor(downlink_proc->get_downlink_request_handler(),
                   uplink_proc->get_prach_request_handler(),
                   uplink_proc->get_puxch_request_handler()),
-  controller(std::move(config.controller))
+  controller(std::move(config.controller)),
+  dl_tuner(std::move(config.dl_tuner))
 {
   srsran_assert(downlink_proc != nullptr, "Invalid downlink processor.");
   srsran_assert(uplink_proc != nullptr, "Invalid uplink processor.");

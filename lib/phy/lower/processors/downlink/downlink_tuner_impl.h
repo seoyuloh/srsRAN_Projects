@@ -4,10 +4,11 @@
 
 #ifndef DOWNLINK_TUNER_IMPL_H
 #define DOWNLINK_TUNER_IMPL_H
-#include "srsran/phy/lower/processors/downlink/downlink_tuner.h"
 #include "srsran/adt/blocking_queue.h"
 #include "srsran/gateways/baseband/baseband_gateway_receiver.h"
 #include "srsran/gateways/baseband/buffer/baseband_gateway_buffer_dynamic.h"
+#include "srsran/phy/lower/processors/downlink/downlink_tuner.h"
+#include "srsran/srslog/logger.h"
 
 namespace srsran {
 
@@ -19,8 +20,9 @@ public:
   downlink_tuner_impl();
 private:
   std::unique_ptr<std::thread> tuner_thread;
-  std::atomic<float> attenuation=1;
-  std::atomic_bool monitoring=false;
+  std::atomic<double>          attenuation = 1.0;
+  std::atomic_bool monitoring  = false;
+  srslog::basic_logger& logger;
 };
 
 } // namespace srsran
