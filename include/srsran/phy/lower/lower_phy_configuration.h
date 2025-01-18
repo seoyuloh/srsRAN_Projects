@@ -37,7 +37,7 @@
 #include "srsran/ran/subcarrier_spacing.h"
 #include "srsran/srslog/srslog.h"
 #include "srsran/support/executors/task_executor.h"
-#include "srsran/phy/lower/processors/downlink/downlink_tuner.h"
+#include "srsran/phy/lower/processors/downlink/low_phy_tuner.h"
 
 namespace srsran {
 
@@ -115,7 +115,7 @@ struct lower_phy_configuration {
   /// Amplitude control parameters, including baseband gain and clipping.
   amplitude_controller_clipping_config amplitude_config;
   /// Tuner
-  std::optional<downlink_tuner_config> dl_tuner_cfg;
+  std::optional<lowphy_tuner_config> dl_tuner_cfg;
   /// Provides the sectors configuration.
   std::vector<lower_phy_sector_description> sectors;
   /// Provides the baseband gateway.

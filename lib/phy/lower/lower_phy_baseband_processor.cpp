@@ -44,7 +44,7 @@ lower_phy_baseband_processor::lower_phy_baseband_processor(const configuration& 
   tx_buffers(config.nof_tx_buffers),
   tx_time_offset(config.tx_time_offset),
   rx_to_tx_max_delay(config.rx_to_tx_max_delay),
-  dl_tuner(config.dl_tuner)
+  tuner(config.dl_tuner)
 {
   static constexpr interval<float> system_time_throttling_range(0, 1);
   srsran_assert(tx_buffer_size, "Invalid buffer size.");
@@ -143,8 +143,10 @@ void lower_phy_baseband_processor::dl_process(baseband_gateway_timestamp timesta
 
   // Set transmission timestamp.
   baseband_md.ts = timestamp + tx_time_offset;
-  if (dl_tuner) {
-    dl_tuner->tune(dl_buffer->get_writer());
+
+  //tuner implementation
+  if (tuner) {
+    tuner->tune(dl_buffer->get_writer());
   }
   // Enqueue transmission.
   report_fatal_error_if_not(tx_executor.execute([this, tx_buffer = std::move(dl_buffer), baseband_md]() mutable {
@@ -180,6 +182,11 @@ void lower_phy_baseband_processor::ul_process()
   trace_point                         tp          = ru_tracer.now();
   baseband_gateway_receiver::metadata rx_metadata = receiver.receive(rx_buffer->get_writer());
   ru_tracer << trace_event("receive_baseband", tp);
+
+  //uplink tuner
+  // if (tuner) {
+  //   tuner->tune(rx_buffer->get_writer());
+  // }
 
   // Update last timestamp.
   last_rx_timestamp.store(rx_metadata.ts + rx_buffer->get_nof_samples(), std::memory_order_release);

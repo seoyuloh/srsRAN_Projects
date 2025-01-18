@@ -29,9 +29,9 @@
 
 using namespace srsran;
 
-static void configure_cli11_downlink_tuner_args(CLI::App& app, downlink_tuner_config &cfg)
+static void configure_cli11_lowphy_tuner_args(CLI::App& app, lowphy_tuner_config &cfg)
 {
-  add_option(app, "--name", cfg.downlink_tuner_name, "Name for downlink tuner")->capture_default_str();
+  add_option(app, "--name", cfg.lowphy_tuner_name, "Name for downlink tuner")->capture_default_str();
   add_option(app, "--domain_socket", cfg.domain_socket_name, "Domain socket to communicate tuning")
       ->capture_default_str();
 }
@@ -139,8 +139,8 @@ static void configure_cli11_ru_sdr_args(CLI::App& app, ru_sdr_unit_config& confi
   configure_cli11_amplitude_control_args(*amplitude_control_subcmd, config.amplitude_cfg);
 
   // Downlink tuner
-  auto downlink_tuner_subcmd = add_subcommand(app, "downlink_tuner", "Downlink tuner params");
-  configure_cli11_downlink_tuner_args(*downlink_tuner_subcmd,config.downlink_tuner_cfg);
+  auto lowphy_tuner_subcommand = add_subcommand(app, "lowphy_tuner", "Lowphy tuner params");
+  configure_cli11_lowphy_tuner_args(*lowphy_tuner_subcommand,config.lowphy_tuner_cfg);
 
   // Expert configuration.
   CLI::App* expert_subcmd = add_subcommand(app, "expert_cfg", "Generic Radio Unit expert configuration");

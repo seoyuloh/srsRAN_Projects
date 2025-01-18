@@ -8,21 +8,21 @@
 #include "srsran/gateways/baseband/baseband_gateway_receiver.h"
 namespace srsran {
 
-class downlink_tuner
+class low_phy_tuner
 {
 public:
-  virtual ~downlink_tuner() = default;
+  virtual ~low_phy_tuner() = default;
   virtual void tune(baseband_gateway_buffer_writer& buffer) = 0;
 };
 
-class downlink_tuner_config
+class lowphy_tuner_config
 {
 public:
-  std::string downlink_tuner_name;
+  std::string lowphy_tuner_name;
   std::string domain_socket_name;
 };
 
-std::unique_ptr<downlink_tuner> create_downlink_tuner(const downlink_tuner_config& config);
+std::unique_ptr<low_phy_tuner> create_lowphy_tuner(const lowphy_tuner_config& config);
 } // namespace srsran
 
 #endif // DOWNLINK_TUNER_H

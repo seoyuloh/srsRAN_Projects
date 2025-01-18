@@ -104,7 +104,7 @@ static lower_phy_configuration generate_low_phy_config(const srs_du::du_cell_con
   out_cfg.amplitude_config.full_scale_lin = 1.0F;
 
   // Downlink tuner
-  out_cfg.dl_tuner_cfg = ru_cfg.downlink_tuner_cfg;
+  out_cfg.dl_tuner_cfg = ru_cfg.lowphy_tuner_cfg;
 
   lower_phy_sector_description sector_config;
   sector_config.bandwidth_rb = band_helper::get_n_rbs_from_bw(

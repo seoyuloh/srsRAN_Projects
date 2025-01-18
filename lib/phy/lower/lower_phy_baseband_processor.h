@@ -31,7 +31,7 @@
 #include "srsran/phy/lower/processors/downlink/downlink_processor_baseband.h"
 #include "srsran/phy/lower/processors/uplink/uplink_processor_baseband.h"
 #include "srsran/phy/lower/sampling_rate.h"
-#include "srsran/phy/lower/processors/downlink/downlink_tuner.h"
+#include "srsran/phy/lower/processors/downlink/low_phy_tuner.h"
 
 namespace srsran {
 
@@ -90,7 +90,7 @@ public:
     /// System time-based throttling. See \ref lower_phy_configuration::system_time_throttling.
     float system_time_throttling;
     // Tuner
-    downlink_tuner* dl_tuner;
+    low_phy_tuner* dl_tuner;
   };
 
   /// Constructs a baseband adaptor.
@@ -205,7 +205,7 @@ private:
   internal_fsm                                                               rx_state;
   std::atomic<baseband_gateway_timestamp>                                    last_rx_timestamp;
   std::optional<std::chrono::time_point<std::chrono::high_resolution_clock>> last_tx_time;
-  downlink_tuner*                                                            dl_tuner;
+  low_phy_tuner*                                                            tuner;
 };
 
 } // namespace srsran

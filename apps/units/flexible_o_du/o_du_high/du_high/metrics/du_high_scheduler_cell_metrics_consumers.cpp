@@ -160,7 +160,7 @@ void scheduler_cell_metrics_consumer_stdout::handle_metric(const app_services::m
 
     fmt::print("   {:>2}", int(ue.dl_mcs.to_uint()));
     if (ue.dl_brate_kbps > 0) {
-      fmt::print(" {:>6.6}", float_to_eng_string(ue.dl_brate_kbps * 1e3, 1, true));
+      fmt::print(" {:>6.6}", float_to_eng_string(ue.dl_brate_kbps * 1e3, 3, true));
     } else {
       fmt::print(" {:>6}", 0);
     }
@@ -194,7 +194,7 @@ void scheduler_cell_metrics_consumer_stdout::handle_metric(const app_services::m
 
     fmt::print("   {:>2}", ue.ul_mcs.to_uint());
     if (ue.ul_brate_kbps > 0) {
-      fmt::print(" {:>6.6}", float_to_eng_string(ue.ul_brate_kbps * 1e3, 1, true));
+      fmt::print(" {:>6.6}", float_to_eng_string(ue.ul_brate_kbps * 1e3, 3, true));
     } else {
       fmt::print(" {:>6}", 0);
     }

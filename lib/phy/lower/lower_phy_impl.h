@@ -56,7 +56,7 @@ public:
     /// Uplink processor.
     std::unique_ptr<lower_phy_uplink_processor> uplink_proc;
     /// dl tuner
-    std::unique_ptr<downlink_tuner> dl_tuner;
+    std::unique_ptr<low_phy_tuner> dl_tuner;
     /// Baseband controller.
     std::unique_ptr<lower_phy_controller> controller;
     /// Symbol handler to notify the reception of symbols.
@@ -92,7 +92,7 @@ public:
   /// Baseband adaptor. It implements the lower physical layer controller.
   std::unique_ptr<lower_phy_controller> controller;
   // Downlink tuner
-  std::unique_ptr<downlink_tuner> dl_tuner;
+  std::unique_ptr<low_phy_tuner> dl_tuner;
 };
 
 } // namespace srsran

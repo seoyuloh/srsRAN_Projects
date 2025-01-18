@@ -163,9 +163,9 @@ public:
     std::unique_ptr<lower_phy_uplink_processor> ul_proc = uplink_proc_factory->create(ul_proc_config);
     srsran_assert(dl_proc, "Failed to create the UL processor.");
 
-    std::unique_ptr<downlink_tuner> dl_tuner;
+    std::unique_ptr<low_phy_tuner> dl_tuner;
     if (config.dl_tuner_cfg) {
-      dl_tuner = create_downlink_tuner(*config.dl_tuner_cfg);
+      dl_tuner = create_lowphy_tuner(*config.dl_tuner_cfg);
     }
 
     // Prepare processor baseband adaptor configuration.
